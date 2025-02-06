@@ -1,12 +1,9 @@
 # Azure Active Directory OAuth
 
-[![pub package](https://img.shields.io/pub/v/aad_oauth.svg)](https://pub.dartlang.org/packages/aad_oauth)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![style: effective dart](https://img.shields.io/badge/style-effective_dart-40c4ff.svg)](https://github.com/tenhobi/effective_dart)
-[![pub points](https://img.shields.io/pub/points/aad_oauth?logo=dart)](https://pub.dev/packages/aad_oauth/score)
-[![Join the chat](https://badges.gitter.im/Earlybyte/aad_oauth.svg)](https://gitter.im/Earlybyte/aad_oauth?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
-A Flutter OAuth package for performing user authentication against Azure Active Directory OAuth2 v2.0 endpoint. Forked from [hitherejoe.FlutterOAuth](https://github.com/hitherejoe/FlutterOAuth).
+A Flutter OAuth package for performing user authentication against Azure Active Directory OAuth2 v2.0 endpoint. Forked from [Earlybyte.aad_oauth](https://github.com/Earlybyte/aad_oauth).
 
 Supported Flows:
 
@@ -18,7 +15,7 @@ Supported Flows:
 
 For using this library you have to create an azure app at the [Azure App registration portal](https://apps.dev.microsoft.com/). Use native app as platform type (with callback URL: <https://login.live.com/oauth20_desktop.srf>).
 
-Your minSdkVersion must be >= 20 in `android/app/build.gradle` section `android / defaultConfig` to support webview_flutter. Version 19 may build but will likely fail at runtime.
+Your minSdkVersion must be >= 23 in `android/app/build.gradle` section `android / defaultConfig` to support webview_flutter. Lower versions may build but will likely fail at runtime.
 
 If your app does not have the `android.permission.INTERNET` permission you must add it to the AndroidManifest
 `<uses-permission android:name="android.permission.INTERNET"/>`
@@ -161,7 +158,7 @@ Add the following to your pubspec.yaml dependencies:
 
 ```yaml
 dependencies:
-  aad_oauth: "^1.0.1"
+  ace_azure_oauth: "^1.0.2"
 ```
 
 ## Contribution
