@@ -1,0 +1,35 @@
+name: Release
+
+on:
+  workflow_dispatch:
+    branches:
+      - master
+
+env:
+  PACKAGE_REPOSITORY_TOKEN: ${{ secrets.PACKAGE_REPOSITORY_TOKEN }}
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Install dart
+      uses: dart-lang/setup-dart@v1
+
+    - name: Add package repository token
+      shell: bash
+      env:
+        PACKAGE_REPOSITORY_TOKEN: ${{ secrets.PACKAGE_REPOSITORY_TOKEN }}
+      run: dart pub token add https://dart.cloudsmith.io/ace-yy4e/dart/ --env-var PACKAGE_REPOSITORY_TOKEN
+
+    - name: Publish package
+      shell: bash
+      run: dart pub publish --force
+
+    - name: Create release branch
+      run: |
+        VERSION=$(awk '/version:/{print $2; exit}' pubspec.yaml)
+        git checkout -b release/$VERSION
+        git push --set-upstream origin release/$VERSION
