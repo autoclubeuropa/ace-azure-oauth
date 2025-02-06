@@ -18,6 +18,12 @@ jobs:
     - name: Install dart
       uses: dart-lang/setup-dart@v1
 
+    - name: Install flutter
+      uses: flutter-actions/setup-flutter@v4
+      with:
+        channel: stable
+        versionversion: 3.27.1
+
     - name: Add package repository token
       shell: bash
       env:
@@ -26,7 +32,7 @@ jobs:
 
     - name: Publish package
       shell: bash
-      run: dart pub publish --force
+      run: flutter pub publish --force
 
     - name: Create release branch
       run: |
