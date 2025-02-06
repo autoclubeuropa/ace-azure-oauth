@@ -1,4 +1,4 @@
-import 'package:aad_oauth/model/config.dart';
+import 'package:ace_azure_oauth/model/config.dart';
 
 class AuthorizationRequest {
   final String url;

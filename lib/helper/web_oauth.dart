@@ -6,11 +6,11 @@ library msauth;
 import 'dart:async';
 import 'dart:convert';
 
-import 'package:aad_oauth/helper/core_oauth.dart';
-import 'package:aad_oauth/model/config.dart';
-import 'package:aad_oauth/model/failure.dart';
-import 'package:aad_oauth/model/msalconfig.dart';
-import 'package:aad_oauth/model/token.dart';
+import 'package:ace_azure_oauth/helper/core_oauth.dart';
+import 'package:ace_azure_oauth/model/config.dart';
+import 'package:ace_azure_oauth/model/failure.dart';
+import 'package:ace_azure_oauth/model/msalconfig.dart';
+import 'package:ace_azure_oauth/model/token.dart';
 import 'package:dartz/dartz.dart';
 import 'package:js/js.dart';
 import 'package:js/js_util.dart';
