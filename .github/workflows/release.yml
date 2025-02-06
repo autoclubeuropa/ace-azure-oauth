@@ -28,7 +28,7 @@ jobs:
       shell: bash
       env:
         PACKAGE_REPOSITORY_TOKEN: ${{ secrets.PACKAGE_REPOSITORY_TOKEN }}
-      run: dart pub token add https://dart.cloudsmith.io/ace-yy4e/dart/ --env-var PACKAGE_REPOSITORY_TOKEN
+      run: flutter pub token add https://dart.cloudsmith.io/ace-yy4e/dart/ --env-var PACKAGE_REPOSITORY_TOKEN
 
     - name: Publish package
       shell: bash
