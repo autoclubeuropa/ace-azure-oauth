@@ -1,5 +1,5 @@
 import 'dart:async';
-import 'package:aad_oauth/model/token.dart';
+import 'package:ace_azure_oauth/model/token.dart';
 import 'dart:convert' show jsonEncode, jsonDecode;
 import 'package:flutter_secure_storage/flutter_secure_storage.dart';
 

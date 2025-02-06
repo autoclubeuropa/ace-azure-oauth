@@ -1,6 +1,9 @@
 # Changelog
 
-## [Unreleased]
+## [1.0.2] - 20250206
+
+- Upgrade dependencies
+- Rename package
 
 ## [1.0.1] - 20230215
 

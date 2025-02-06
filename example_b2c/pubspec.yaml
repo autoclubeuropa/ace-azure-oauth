@@ -1,5 +1,6 @@
-name: aad_oauth_example_b2c
-description: A Flutter OAuth package example for performing user authentication against Azure B2C OAuth2 v2.0 endpoint.
+name: ace_azure_oauth_example_b2c
+description: A Flutter OAuth package example for performing user authentication against 
+  Azure B2C OAuth2 v2.0 endpoint. This package is a fork of the aad_oauth package.
 publish_to: none
 # The following defines the version and build number for your application.
 # A version number is three numbers separated by dots, like 1.2.43
@@ -19,7 +20,7 @@ environment:
   sdk: '>=3.3.0 <4.0.0'
 
 dependencies:
-  aad_oauth:
+  ace_azure_oauth:
     path: ../
   flutter:
     sdk: flutter

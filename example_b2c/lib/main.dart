@@ -1,7 +1,7 @@
 import 'dart:developer';
 
-import 'package:aad_oauth/aad_oauth.dart';
-import 'package:aad_oauth/model/config.dart';
+import 'package:ace_azure_oauth/aad_oauth.dart';
+import 'package:ace_azure_oauth/model/config.dart';
 import 'package:flutter/material.dart';
 
 void main() => runApp(MyApp());
